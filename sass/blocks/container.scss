@@ -5,7 +5,5 @@
   padding: 0 10px;
 
 }
-@media (max-width: $toast-breakpoint-small) {
-}
-@media (max-width: $toast-breakpoint-medium) {
+@media (min-width: $desctop-width) {
 }
