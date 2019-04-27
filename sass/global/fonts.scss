@@ -1,11 +1,49 @@
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/subset-Lato-Heavy.eot');
-  src: url('../fonts/subset-Lato-Heavy.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/subset-Lato-Heavy.woff2') format('woff2'),
-  url('../fonts/subset-Lato-Heavy.woff') format('woff'),
-  url('../fonts/subset-Lato-Heavy.ttf') format('truetype'),
-  url('../fonts/subset-Lato-Heavy.svg#Lato-Heavy') format('svg');
-  font-weight: 900;
+  font-family: 'MinionPro';
+  src: url('../fonts/MinionPro-Regular.woff2') format('woff2'),
+  url('../fonts/MinionPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensansbold.woff2') format('woff2'),
+  url('../fonts/opensansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff2') format('woff2'),
+  url('../fonts/opensans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans-Bold.woff2') format('woff2'),
+  url('../fonts/PTSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+  url('../fonts/Ubuntu-Light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
 }
