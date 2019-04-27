@@ -5,51 +5,299 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap</title>
+  <title>TechMarket</title>
 </head>
 <body>
 <header class="header">
-  <div class="container container--header-container">
-    <div class="header__upper">
-      <div class="header__logo-toggle">
-          <div class="logo">
-            <img src="img/logo.png" alt="logo" class="logo__image">
-          </div>
-          <div class="header__toggle">
-            <button class="header__toggle-button header__toggle-button--cross"></button>
-            <button class="header__toggle-button header__toggle-button--hamburger"></button>
-          </div>
-      <nav class="nav nav--header">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">home</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">about us</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">menu</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">blog</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="header__bottom">
-    <div class="page-title">
-        <h1 class="page-title__title">
-          Welcome to Be Latte
-        </h1>
-        <p class="page-title__description">
-          Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.
-        </p>
-      </div>
-      <a href="#" class="header__bottom-menu-link">
-        see menu
-      </a>
-    </div>
-  </div>
 </header>
   <main class="main">
-    <div class="container"></div>
+    <div class="container">
+      <section class="goods">
+        <div class="goods-categories">
+          <article class="goods-categories__item item-category">
+            <a href="#" class="item-category__name">
+              <h4 class="item-category__title">Все для дачи</h4>
+            </a>
+            <img src="../img/content/chainsaws.png" alt="chainsaws" class="item-category__image">
+          </article>
+          <article class="goods-categories__item item-category">
+            <a href="#" class="item-category__name">
+              <h4 class="item-category__title">Спорт. товары</h4>
+            </a>
+            <img src="../img/content/bicycle.png" alt="chainsaws" class="item-category__image">
+          </article>
+        </div>
+        <div class="goods-slider">
+          <div class="goods-slider__items-wrapper">
+            <div class="goods-slider__item goods-slider__item--forest">
+              <h4 class="goods-slider__item-name">
+                Большие скидки на бензопилы
+              </h4>
+              <p class="goods-slider__item-description">
+                Техническое обслуживание автомобилей у настоящих профессионалов
+              </p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+            <div class="goods-slider__item goods-slider__item--forest">
+              <h4 class="goods-slider__item-name">Средние скидки на бензопилы</h4>
+              <p class="goods-slider__item-description">
+                Техническое обслуживание автомобилей у настоящих профессионалов
+              </p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+            <div class="goods-slider__item goods-slider__item--forest">
+              <h4 class="goods-slider__item-name">
+                Малые скидки на бензопилы
+              </h4>
+              <p class="goods-slider__item-description">
+                Техническое обслуживание автомобилей у настоящих профессионалов
+              </p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+          </div>
+          <div class="goods-slider__controls">
+            <span class="goods-slider__controls-prev"></span>
+            <span class="goods-slider__controls-next"></span>
+          </div>
+          <div class="goods-slider__indicators">
+            <span class="goods-slider__indicators-item"></span>
+            <span class="goods-slider__indicators-item"></span>
+            <span class="goods-slider__indicators-item"></span>
+          </div>
+        </div>
+        <div class="discounts">
+          <div class="discount-item">
+            <div class="discount-item__name">
+              <h5 class="discount-item__name">
+                <img src="../img/decorate/canon.png" alt="#" class="discount-item__name-logo">
+                <span class="discount-item__model">EOS 1300D Kit</span>
+              </h5>
+              <span class="discount-item__value">-10%</span>
+            </div>
+            <img src="../img/content/canon_photo.png" alt="#" class="discount-item__image">
+            <div class="discount-item__timer">
+              <p class="discount-item__timer-info">
+                До конца акции осталось:
+              </p>
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val">1</span>
+                  <span class="discount-item__timer-val">2</span>
+                </div>
+                <span class="discount-item__timer-units">Часы</span>
+              </div>
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val">1</span>
+                  <span class="discount-item__timer-val">1</span>
+                </div>
+                <span class="discount-item__timer-units">Минуты</span>
+              </div>
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val">5</span>
+                  <span class="discount-item__timer-val">2</span>
+                </div>
+                <span class="discount-item__timer-units">Секунды</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bestsellers">
+        <h3 class="bestsellers__title">Самые продаваемые товары</h3>
+        <div class="bestsellers-slider">
+          <div class="bestsellers-slider__wrapper">
+            <article class="bestseller">
+              <img src="../img/content/BoschMMR08A1.jpg" alt="Измельчитель BoschMMR08A1" class="bestseller__image">
+              <h5 class="bestseller__title">
+                Измельчитель Bosch MMR 08A1
+              </h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count">Много</span>
+                <p class="bestseller__code">
+                  <span class="bestseller__code-name">Артикул:</span>
+                  <span class="bestseller__code-value">34242342</span>
+                </p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices">
+                  <span class="bestseller__prev-price">18000 &#x20bd;</span>
+                  <span class="bestseller__current-price">15000 &#x20bd;</span>
+                </p>
+                <p class="bestseller__saving">
+                  <span class="bestseller__saving-name">Экономия:</span>
+                  <span class="bestseller__saving-value">5000 &#x20bd;</span>
+                </p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min">-</span>
+                  <span class="bestseller__order-value">14</span>
+                  <span class="bestseller__order-plus">+</span>
+                </div>
+                <a href="#" class="bestseller__card-link">Корзина</a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="../img/content/Tesla_Set_3_(348438).jpg" alt="Tesla Set" class="bestseller__image">
+              <h5 class="bestseller__title">
+                Электромонтажный набор Tesla Set 3 (348438)
+              </h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count">Много</span>
+                <p class="bestseller__code">
+                  <span class="bestseller__code-name">Артикул:</span>
+                  <span class="bestseller__code-value">34242342</span>
+                </p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices">
+                  <span class="bestseller__prev-price">18000 &#x20bd;</span>
+                  <span class="bestseller__current-price">15000 &#x20bd;</span>
+                </p>
+                <p class="bestseller__saving">
+                  <span class="bestseller__saving-name">Экономия:</span>
+                  <span class="bestseller__saving-value">5000 &#x20bd;</span>
+                </p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min">-</span>
+                  <span class="bestseller__order-value">14</span>
+                  <span class="bestseller__order-plus">+</span>
+                </div>
+                <a href="#" class="bestseller__card-link">Корзина</a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="../img/content/SKMEI_9096.jpg" alt="Наручные часы SKMEI 9096" class="bestseller__image">
+              <h5 class="bestseller__title">
+                Наручные часы SKMEI 9096
+              </h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count">Много</span>
+                <p class="bestseller__code">
+                  <span class="bestseller__code-name">Артикул:</span>
+                  <span class="bestseller__code-value">34242342</span>
+                </p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices">
+                  <span class="bestseller__prev-price">18000 &#x20bd;</span>
+                  <span class="bestseller__current-price">15000 &#x20bd;</span>
+                </p>
+                <p class="bestseller__saving">
+                  <span class="bestseller__saving-name">Экономия:</span>
+                  <span class="bestseller__saving-value">5000 &#x20bd;</span>
+                </p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min">-</span>
+                  <span class="bestseller__order-value">14</span>
+                  <span class="bestseller__order-plus">+</span>
+                </div>
+                <a href="#" class="bestseller__card-link">Корзина</a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="../img/content/MartaMT-1092.jpg" alt="Чайник Marta MT-1092" class="bestseller__image">
+              <h5 class="bestseller__title">
+                Чайник Marta MT-1092
+              </h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count">Много</span>
+                <p class="bestseller__code">
+                  <span class="bestseller__code-name">Артикул:</span>
+                  <span class="bestseller__code-value">34242342</span>
+                </p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices">
+                  <span class="bestseller__prev-price">18000 &#x20bd;</span>
+                  <span class="bestseller__current-price">15000 &#x20bd;</span>
+                </p>
+                <p class="bestseller__saving">
+                  <span class="bestseller__saving-name">Экономия:</span>
+                  <span class="bestseller__saving-value">5000 &#x20bd;</span>
+                </p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min">-</span>
+                  <span class="bestseller__order-value">14</span>
+                  <span class="bestseller__order-plus">+</span>
+                </div>
+                <a href="#" class="bestseller__card-link">Корзина</a>
+              </div>
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="../img/content/XiaomiMi8.jpg" alt="Смартфон Xiaomi Mi8 SE 6/64GB" class="bestseller__image">
+              <h5 class="bestseller__title">
+                Смартфон Xiaomi Mi8 SE 6/64GB
+              </h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count">Много</span>
+                <p class="bestseller__code">
+                  <span class="bestseller__code-name">Артикул:</span>
+                  <span class="bestseller__code-value">34242342</span>
+                </p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices">
+                  <span class="bestseller__prev-price">18000 &#x20bd;</span>
+                  <span class="bestseller__current-price">15000 &#x20bd;</span>
+                </p>
+                <p class="bestseller__saving">
+                  <span class="bestseller__saving-name">Экономия:</span>
+                  <span class="bestseller__saving-value">5000 &#x20bd;</span>
+                </p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min">-</span>
+                  <span class="bestseller__order-value">14</span>
+                  <span class="bestseller__order-plus">+</span>
+                </div>
+                <a href="#" class="bestseller__card-link">Корзина</a>
+              </div>
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+          </div>
+          <div class="bestsellers-slider__controls">
+            <span class="bestsellers-slider__controls-prev"></span>
+            <span class="bestsellers-slider__controls-next"></span>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
-    <div class="container container--footer"></div>
+    <div class="container container--footer">
+      <a href="#" class="logo"></a>
+      <p class="footer__copyright">
+        2018&nbsp;&copy;&nbsp;TechMarket– технологичный интернет-магазин
+      </p>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

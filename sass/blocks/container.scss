@@ -1,9 +1,9 @@
 .container{
-  width: 1270px;
+  width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 10px;
 
 }
 @media (min-width: $desctop-width) {
+  width: 1346px;
 }
