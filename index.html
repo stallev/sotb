@@ -9,47 +9,231 @@
 </head>
 <body>
 <header class="header">
-  <div class="container container--header-container">
-    <div class="header__upper">
-      <div class="header__logo-toggle">
-          <div class="logo">
-            <img src="img/logo.png" alt="logo" class="logo__image">
-          </div>
-          <div class="header__toggle">
-            <button class="header__toggle-button header__toggle-button--cross"></button>
-            <button class="header__toggle-button header__toggle-button--hamburger"></button>
-          </div>
-      <nav class="nav nav--header">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">home</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">about us</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">menu</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">blog</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="header__bottom">
-    <div class="page-title">
-        <h1 class="page-title__title">
-          Welcome to Be Latte
-        </h1>
-        <p class="page-title__description">
-          Enjoy of a fresh new approach to coffee. Proin gravida nibh vel velit. Auctor aliquet sollicitudin lorem quis.
-        </p>
-      </div>
-      <a href="#" class="header__bottom-menu-link">
-        see menu
-      </a>
-    </div>
-  </div>
 </header>
   <main class="main">
-    <div class="container"></div>
+    <div class="container">
+      <section class="goods">
+        <div class="goods-categories">
+          <article class="goods-categories__item item-category">
+            <a href="#" class="item-category__name">
+              <h4 class="item-category__title"></h4>
+            </a>
+            <img src="../img/content/chainsaws.png" alt="chainsaws" class="item-category__image">
+          </article>
+          <article class="goods-categories__item item-category">
+            <a href="#" class="item-category__name">
+              <h4 class="item-category__title"></h4>
+            </a>
+            <img src="../img/content/chainsaws.png" alt="chainsaws" class="item-category__image">
+          </article>
+        </div>
+        <div class="goods-slider">
+          <div class="goods-slider__items-wrapper">
+            <div class="goods-slider__item">
+              <h4 class="goods-slider__item-name"></h4>
+              <p class="goods-slider__item-description"></p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+            <div class="goods-slider__item">
+              <h4 class="goods-slider__item-name"></h4>
+              <p class="goods-slider__item-description"></p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+            <div class="goods-slider__item">
+              <h4 class="goods-slider__item-name"></h4>
+              <p class="goods-slider__item-description"></p>
+              <a href="#" class="goods-slider__item-link-more">Узнать больше</a>
+            </div>
+          </div>
+          <div class="goods-slider__controls">
+            <span class="goods-slider__controls-prev"></span>
+            <span class="goods-slider__controls-next"></span>
+          </div>
+          <div class="goods-slider__indicators">
+            <span class="goods-slider__indicators-item"></span>
+            <span class="goods-slider__indicators-item"></span>
+            <span class="goods-slider__indicators-item"></span>
+          </div>
+        </div>
+        <div class="discounts">
+          <div class="discount-item">
+            <h5 class="discount-item__name">
+              <img src="../img/decorate/canon.png" alt="#" class="discount-item__name-logo">
+              <span class="discount-item__model">EOS 1300D Kit</span>
+            </h5>
+            <span class="discount-item__value">-10%</span>
+            <div class="discount-item__timer">
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val"></span>
+                  <span class="discount-item__timer-val"></span>
+                </div>
+                <span class="discount-item__timer-units">часы</span>
+              </div>
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val"></span>
+                  <span class="discount-item__timer-val"></span>
+                </div>
+                <span class="discount-item__timer-units">минуты</span>
+              </div>
+              <div class="discount-item__timer-item">
+                <div class="discount-item__timer-part">
+                  <span class="discount-item__timer-val"></span>
+                  <span class="discount-item__timer-val"></span>
+                </div>
+                <span class="discount-item__timer-units">секунды</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bestsellers">
+        <h3 class="bestsellers__title">Самые продаваемые товары</h3>
+        <div class="bestsellers-slider">
+          <div class="bestsellers-slider__wrapper">
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+            <article class="bestseller">
+              <img src="" alt="" class="bestseller__image">
+              <h5 class="bestseller__title"></h5>
+              <div class="bestseller__rate"></div>
+              <div class="bestseller__info">
+                <span class="bestseller__count"></span>
+                <p class="bestseller__code"><span class="bestseller__code-name"></span><span class="bestseller__code-value"></span></p>
+              </div>
+              <div class="bestseller__discount">
+                <p class="bestseller__prices"><span class="bestseller__prev-price"></span><span class="bestseller__current-price"></span></p>
+                <p class="bestseller__saving"><span class="bestseller__saving-name"></span><span class="bestseller__saving-value"></span></p>
+              </div>
+              <div class="bestseller__order">
+                <div class="bestseller__order-add">
+                  <span class="bestseller__order-min"></span>
+                  <span class="bestseller__order-value"></span>
+                  <span class="bestseller__order-plus"></span>
+                </div>
+                <a href="" class="bestseller__card-link"></a>
+              </div>
+            </article>
+          </div>
+          <div class="bestsellers-slider__controls">
+            <span class="bestsellers-slider__controls-prev"></span>
+            <span class="bestsellers-slider__controls-next"></span>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
-    <div class="container container--footer"></div>
+    <div class="container container--footer">
+      <a href="#" class="logo"></a>
+      <p class="footer__copyright">
+        2018&nbsp;&copy;&nbsp;TechMarket– технологичный интернет-магазин
+      </p>
+    </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
