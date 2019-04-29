@@ -1,3 +1,79 @@
-
+.bestseller{
+  @extend %fl-column;
+  align-items: center;
+  padding-top: 27px;
+  width: 244px;
+  border: 1px solid #f4f4f4;
+  font-family: "Open Sans";
+  &__title{
+    padding: 0 35px;
+    margin-bottom: 15px;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  &__count{
+    position: relative;
+    display: block;
+    color: #1d1d1d;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    &::before{}
+  }
+  &__code{
+    margin-bottom: 15px;
+    color: #807f7f;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__discount{
+    @extend %fl-column;
+  }
+  &__prices{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+  }
+  &__prev-price{
+    color: #cbcbcb;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: line-through;
+  }
+  &__current-price{
+    color: #1d1d1d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  &__saving{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__saving-name{
+    color: #1d1d1d;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__saving-value{
+    border: solid #00b02a 1px;
+    color: #00b02a;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
 @media (min-width: $desctop-width) {
 }

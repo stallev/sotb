@@ -1,3 +1,16 @@
-.footer{}
+.footer{
+  @extend %fl-column;
+  align-items: center;
+  &__copyright{
+    padding: 5px 25px;
+    color: #4a4b49;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 @media (min-width: $desctop-width) {
 }

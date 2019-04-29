@@ -1,3 +1,10 @@
 .logo{
-  position: absolute;
+  &__link{
+    display: block;
+    text-align: center;
+  }
+  &__link-image{
+    width: 92px;
+    height: 20px;
+  }
 }

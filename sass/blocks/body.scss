@@ -7,3 +7,6 @@ article, div, section, ul, li{
 ul{
   padding: 0;
 }
+article, div, section, ul, li, p{
+  box-sizing: border-box;
+}
