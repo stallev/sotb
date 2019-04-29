@@ -1,5 +1,5 @@
 //@import "toast_grid.scss";
-//@import "mixins.scss";
+@import "mixins.scss";
 @import "placeholders.scss";
 @import "variables.scss";
 @import "global/fonts.scss";
@@ -8,11 +8,14 @@
 @import "blocks/container.scss";
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
-@import "blocks/location.scss";
 @import "blocks/logo.scss";
 @import "blocks/main.scss";
-@import "blocks/menu.scss";
-@import "blocks/nav.scss";
-@import "blocks/page-title.scss";
-@import "blocks/social.scss";
-@import "blocks/testimonials.scss";
+@import "blocks/bestseller.scss";
+@import "blocks/bestsellers.scss";
+@import "blocks/bestsellers-slider.scss";
+@import "blocks/goods.scss";
+@import "blocks/goods-slider.scss";
+@import "blocks/goods-categories.scss";
+@import "blocks/item-category.scss";
+@import "blocks/discounts.scss";
+@import "blocks/discount-item.scss";
