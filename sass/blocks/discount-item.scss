@@ -1,0 +1,8 @@
+.discount-item{
+  display: none;
+}
+@media (min-width: $desctop-width) {
+  .discount-item{
+    display: block;
+  }
+}

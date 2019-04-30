@@ -2,4 +2,8 @@
   display: none;
 }
 @media (min-width: $desctop-width) {
+  .goods-categories{
+    display: flex;
+    flex-direction: column;
+  }
 }
