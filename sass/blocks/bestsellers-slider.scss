@@ -1,3 +1,29 @@
 
 @media (min-width: $desctop-width) {
+  .bestsellers-slider{
+    &__wrapper{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+    }
+    &__controls{
+      position: absolute;
+      top: 50%;
+      &-prev,
+      &-next{
+        position: absolute;
+        display: block;
+        width: 31px;
+        height: 63px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &-prev{
+        background-image: url(../img/decorate/prev_control.png);
+      }
+      &-next{
+        background-image: url(../img/decorate/next_control.png);
+      }
+    }
+  }
 }

@@ -2,9 +2,12 @@
 @media (min-width: $desctop-width) {
   .item-category{
     width: 345px;
-    margin-bottom: 25px;
     padding-top: 15px;
     background-color: #ebebeb;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    text-align: center;
     &__title{
       display: inline-block;
       vertical-align: top;

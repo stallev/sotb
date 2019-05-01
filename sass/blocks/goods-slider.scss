@@ -19,7 +19,6 @@
     line-height: 24px;
   }
   &-description{
-    height: 36px;
     overflow: hidden;
     font-size: 12px;
     font-weight: 400;
@@ -46,11 +45,17 @@
   }
 }
 @media (min-width: $desctop-width) {
+  .goods-slider__items-wrapper{
+    height: 100%;
+  }
   .goods-slider__item{
     width: 639px;
+    height: 423px;
+    padding: 100px 40px 50px;
     text-align: left;
     &-name{
-      width: 285px;
+      width: 286px;
+      margin-bottom: 20px;
       text-align: left;
       font-size: 32px;
       font-weight: 700;
@@ -58,6 +63,7 @@
     }
     &-description{
       width: 285px;
+      margin-bottom: 25px;
       text-align: left;
       font-size: 14px;
       font-weight: 400;

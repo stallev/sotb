@@ -3,6 +3,79 @@
 }
 @media (min-width: $desctop-width) {
   .discount-item{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 304px;
+    height: 100%;
+    background-color: #ebebeb;
+    &__info{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__name{
+      display: flex;
+      flex-direction: column;
+    }
+    &__model{
+      font-family: "Open Sans";
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 14px;
+    }
+    &__value{
+      box-sizing: border-box;
+      width: 120px;
+      height: 66px;
+      padding-top: 10px;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 46px;
+      background-color: #fff343;
+    }
+    &__image{
+      width: 225px;
+      height: 195px;
+      align-self: center;
+    }
+    &__timer-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__timer-info{
+      color: #444444;
+      font-family: "Open Sans-Semibold";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+    &__timer-table{
+      width: 233px;
+      height: 48px;
+      background-image: url(../img/content/counter.png);
+    }
+    &__timer-units{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+    }
+    &__timer-unit{
+      box-sizing: border-box;
+      display: block;
+      width: 78px;
+      padding-left: 20px;
+      color: #0b0b0b;
+      font-family: "Open Sans-Semibold";
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+    &__timer-item{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
