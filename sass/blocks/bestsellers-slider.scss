@@ -1,10 +1,10 @@
 
 @media (min-width: $desctop-width) {
   .bestsellers-slider{
+    overflow-x: hidden;
     &__wrapper{
       position: relative;
-      display: flex;
-      justify-content: space-around;
+      width: 9999px;
     }
     &__controls{
       position: absolute;
@@ -17,12 +17,33 @@
         height: 63px;
         background-position: center;
         background-repeat: no-repeat;
+        top: 209px;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 11px;
+          height: 20px;
+          display: block;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          top: 22px;
+          left: 9px;
+        }
       }
       &-prev{
         background-image: url(../img/decorate/prev_control.png);
+        left: 0;
+        &::before{
+          background-image: url('../img/decorate/prev_arrow.png');
+        }
       }
       &-next{
         background-image: url(../img/decorate/next_control.png);
+        right: -1345px;
+        &::before{
+          background-image: url('../img/decorate/next_arrow.png');
+        }
       }
     }
   }

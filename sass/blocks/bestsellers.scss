@@ -9,4 +9,15 @@
   }
 }
 @media (min-width: $desctop-width) {
+  .bestsellers{
+    &__title{
+      margin: 25px 0;
+      opacity: 0.98;
+      color: #060606;
+      font-family: "Open Sans";
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 24px;  
+    }
+  }
 }

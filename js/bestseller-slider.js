@@ -14,7 +14,9 @@ function minusSlides(){
 
 function showSlides(n){
   var i;
-  var slides = document.getElementsByClassName('bestseller');
+  var slideshow = document.getElementsByClassName('bestseller');
+  var slideshowPosition = [];
+  
   if (n > slides.length){
     slideIndex = 1;
   }
