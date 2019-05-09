@@ -146,6 +146,9 @@
     &__image{
       height: 138px;
     }
+    &__count::before{
+      left: -15px;
+    }
   }
 }
 .bestseller:hover .bestseller__order{
