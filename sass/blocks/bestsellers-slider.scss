@@ -1,12 +1,14 @@
-
+.bestsellers-slider{
+  overflow-x: hidden;
+  &__wrapper{
+    position: relative;
+    width: 9999px;
+    transition: all ease 1s;
+  }
+}
 @media (min-width: $desctop-width) {
   .bestsellers-slider{
     overflow-x: hidden;
-    &__wrapper{
-      position: relative;
-      width: 9999px;
-      transition: all ease 3s;
-    }
     &__controls{
       position: absolute;
       top: 50%;
@@ -36,14 +38,14 @@
         background-image: url(../img/decorate/prev_control.png);
         left: 0;
         &::before{
-          background-image: url('../img/decorate/prev_arrow.png');
+          //background-image: url('../img/decorate/prev_arrow.png');
         }
       }
       &-next{
         background-image: url(../img/decorate/next_control.png);
         right: -1345px;
         &::before{
-          background-image: url('../img/decorate/next_arrow.png');
+          //background-image: url('../img/decorate/next_arrow.png');
         }
       }
     }

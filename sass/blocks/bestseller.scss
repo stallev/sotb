@@ -3,11 +3,12 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 27px;
-  width: 244px;
+  width: 275px;
+  float: left;
   border: 1px solid #f4f4f4;
   font-family: "Open Sans";
   &__title{
-    padding: 0 25px;
+    padding: 0 40px;
     margin-bottom: 15px;
     color: #1d1d1d;
     font-size: 14px;
@@ -33,7 +34,7 @@
     line-height: 18px;
     &::before{
       position: absolute;
-      left: -20px;
+      left: -30px;
       /* >> Symbol you want to use: */
       content: "\f00c";
       /* >> Name of the FA free font (mandatory), e.g.:
