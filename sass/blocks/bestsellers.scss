@@ -2,6 +2,8 @@
   font-family: "Open Sans";
   &__title{
     margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
     color: #060606;
     font-size: 18px;
     font-weight: 700;
@@ -12,7 +14,7 @@
 @media (min-width: $desctop-width) {
   .bestsellers{
     &__title{
-      margin: 25px 0;
+      margin: 56px 0 39px;
       opacity: 0.98;
       color: #060606;
       font-family: "Open Sans";

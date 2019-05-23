@@ -1,6 +1,6 @@
 .goods-slider{
   position: relative;
-
+  margin-bottom: 15px;
   &__controls{
     position: absolute;
     top: 35%;
@@ -41,16 +41,20 @@
   display: none;
   width: 322px;
   height: 228px;
-  padding: 32px 40px;
+  padding: 37px 40px;
   color: #ffffff;
   font-family: "Open Sans";
   text-align: center;
+  background-size: 128%;
+  background-position-y: -44px;
   &-name{
-    font-size: 24px;
+    margin-bottom: 15px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 21px;
   }
   &-description{
+    margin-bottom: 5px;
     overflow: hidden;
     font-size: 12px;
     font-weight: 400;
@@ -58,7 +62,8 @@
   }
   &-link-more{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 7px 20px;
+    margin-top: 15px;
     background-color: #fb0040;
     font-size: 13px;
     font-weight: 700;
@@ -72,7 +77,6 @@
   }
   &--forest{
     background-image: url("../img/content/main_forest.png");
-    background-size: 100%;
     background-repeat: no-repeat;
   }
 }
@@ -102,11 +106,11 @@
   .goods-slider__item{
     width: 639px;
     height: 423px;
-    padding: 100px 40px 50px;
+    padding: 112px 40px 50px;
     text-align: left;
     &-name{
       width: 286px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-align: left;
       font-size: 32px;
       font-weight: 700;
@@ -114,7 +118,7 @@
     }
     &-description{
       width: 285px;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       text-align: left;
       font-size: 14px;
       font-weight: 400;
@@ -125,6 +129,7 @@
       font-size: 14px;
       font-weight: 700;
       line-height: 23px;
+      padding: 7px 21px;
       }
     &-image{
       display: block;

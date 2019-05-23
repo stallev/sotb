@@ -3,10 +3,14 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 27px;
+  margin-bottom: 50px;
   width: 275px;
   float: left;
   border: 1px solid #f4f4f4;
   font-family: "Open Sans";
+  &--hit{}
+  &--discount{}
+  &--discount-value{}
   &__title{
     padding: 0 40px;
     margin-bottom: 15px;
@@ -16,25 +20,29 @@
     line-height: 20px;
     text-align: center;
   }
+  &__image{
+    margin-bottom: 27px;
+  }
   &__rate{
     margin-bottom: 15px;
   }
   &__info{
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    justify-content: space-around;    
   }
   &__count{
     position: relative;
     display: block;
-    padding-right: 25px;
+    margin-left: 21px;
+    margin-right: 31px;
     color: #1d1d1d;
     font-size: 11px;
     font-weight: 400;
     line-height: 18px;
     &::before{
       position: absolute;
-      left: -30px;
+      left: -16px;
       /* >> Symbol you want to use: */
       content: "\f00c";
       /* >> Name of the FA free font (mandatory), e.g.:
@@ -46,7 +54,7 @@
                  - 900 for Solid symbols;
                  - 300 for Light symbols. */
       font-weight: 900;
-      font-size: 15px;
+      font-size: 10px;
       color: #00b02a;
 
       /* >> Optional styling: */
@@ -66,7 +74,7 @@
   }
   &__prices{
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 6px;
     justify-content: space-around;
     text-transform: uppercase;
   }
@@ -138,6 +146,10 @@
     font-weight: 700;
     line-height: 24px;
   }
+  &__order{
+    height: 50px;
+    padding-bottom: 15px;
+  }
 }
 @media (min-width: $desctop-width) {
   .bestseller{
@@ -147,13 +159,10 @@
     z-index:3;
     &__image{
       height: 138px;
+      margin-bottom: 20px;
     }
     &__count::before{
       left: -15px;
-    }
-    &__order{
-      height: 50px;
-      padding-bottom: 15px;
     }
   }
 }
