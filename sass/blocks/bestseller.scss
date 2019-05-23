@@ -143,11 +143,17 @@
   .bestseller{
     float: left;
     width: 270px;
+    margin-bottom: 50px;
+    z-index:3;
     &__image{
       height: 138px;
     }
     &__count::before{
       left: -15px;
+    }
+    &__order{
+      height: 50px;
+      padding-bottom: 15px;
     }
   }
 }
@@ -158,6 +164,7 @@
   color: #fb0040;
 }
 .bestseller:hover {
+  margin-bottom: 0;
   box-shadow: 0 8px 34px 1px rgba(0, 0, 0, 0.18);
   border: 1px solid #ededed;
 }
