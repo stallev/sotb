@@ -1,5 +1,6 @@
 .bestseller{
   @extend %fl-column;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   padding-top: 27px;
