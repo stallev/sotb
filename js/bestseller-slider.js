@@ -6,6 +6,10 @@
   document.querySelector('.bestsellers-slider__controls-next').onclick = motionToRight;
   var bestsellerContainer = document.querySelector('.bestsellers-slider__wrapper');
   var bestsellersCount = document.getElementsByClassName('bestseller').length + 1;
+  var container = document.querySelector('.container');
+  var containerWidth = getComputedStyle(container).width;
+  console.log(containerWidth);
+
 
   function motionToLeft(){
     console.log("motionToLeft");
