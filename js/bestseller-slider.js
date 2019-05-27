@@ -8,12 +8,14 @@
   var bestsellersCount = document.getElementsByClassName('bestseller').length + 1;
 
   function motionToLeft(){
+    console.log("motionToLeft");
     if(left > 1346 - 270*(bestsellersCount-2)){
-      left += -270;
+      left += -270;      
       bestsellerContainer.style.left = left + 'px';
     }
   }
   function motionToRight(){
+    console.log("motionToRight");
     if(left < 1346 - 270*(bestsellersCount-2)){
       left += 270;
       bestsellerContainer.style.left = left + 'px';

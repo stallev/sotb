@@ -1,9 +1,18 @@
 .goods-categories{
   display: none;
 }
+@media (min-width: $tablet-width) {
+  .goods-categories{
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    justify-content: space-around;
+  }
+}
 @media (min-width: $desctop-width) {
   .goods-categories{
     display: flex;
+    order: 1;
     flex-direction: column;
     justify-content: space-between;
   }

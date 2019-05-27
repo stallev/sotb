@@ -1,12 +1,13 @@
-
-@media (min-width: $desctop-width) {
+@media (min-width: $tablet-width) {
   .item-category{
-    width: 345px;
+    margin-top: 0;
+  }
+}
+@media (min-width: $tablet-width) {
+  .item-category{
+    width: 310px;
     padding-top: 15px;
     background-color: #ebebeb;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
     &__title{
       display: inline-block;
       vertical-align: top;
@@ -24,6 +25,9 @@
     }
   }
 }
-.item-category:nth-child(2n){
+@media (min-width: $desctop-width) {
+  .item-category:nth-child(2n){
   margin-top: 27px;
+  }
 }
+

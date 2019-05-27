@@ -15,6 +15,7 @@
       &-prev,
       &-next{
         position: absolute;
+        z-index: 5;
         display: block;
         width: 31px;
         height: 63px;

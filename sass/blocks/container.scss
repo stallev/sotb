@@ -3,13 +3,18 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-@media (min-width: $desctop-width) {
+@media (min-width: $tablet-width) {
   .container{
-    width: 1346px;
+    width: 768x;
     &--footer{
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
     }
+  }
+}
+@media (min-width: $desctop-width) {
+  .container{
+    width: 1346px;
   }
 }
