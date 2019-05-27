@@ -81,6 +81,9 @@
   }
 }
 @media (min-width: $desctop-width) {
+  .goods-slider{
+    margin-bottom: 0;
+  }
   .goods-slider__items-wrapper{
     height: 100%;
   }
