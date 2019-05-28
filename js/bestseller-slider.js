@@ -6,21 +6,28 @@
   document.querySelector('.bestsellers-slider__controls-next').onclick = motionToRight;
   var bestsellerContainer = document.querySelector('.bestsellers-slider__wrapper');
   var bestsellersCount = document.getElementsByClassName('bestseller').length + 1;
+  function getContainerLength(){
+    
+  }
   var container = document.querySelector('.container');
   var containerWidth = getComputedStyle(container).width;
-  console.log(containerWidth);
+  console.log(containerWidth.indexOf('px'));
+  var numberLength = containerWidth.indexOf('px');
+  console.log("numberLength " + numberLength);
+  var containerWidthNumber = parseInt(containerWidth.substring(0, numberLength),10);
+  console.log("containerWidthNumber " + containerWidthNumber);
 
 
   function motionToLeft(){
     console.log("motionToLeft");
-    if(left > 1346 - 270*(bestsellersCount-2)){
+    if(left > containerWidthNumber - 270*(bestsellersCount-2)){
       left += -270;      
       bestsellerContainer.style.left = left + 'px';
     }
   }
   function motionToRight(){
     console.log("motionToRight");
-    if(left < 1346 - 270*(bestsellersCount-2)){
+    if(left < containerWidthNumber - 270*(bestsellersCount-2)){
       left += 270;
       bestsellerContainer.style.left = left + 'px';
     }
