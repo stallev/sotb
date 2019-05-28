@@ -6,22 +6,21 @@
     transition: all ease 1s;
   }
 }
-@media (min-width: $desctop-width) {
+@media (min-width: $tablet-width){
   .bestsellers-slider{
     overflow-x: hidden;
     &__controls{
       position: absolute;
-      top: 50%;
       &-prev,
       &-next{
         position: absolute;
+        top: 130px;
         z-index: 5;
         display: block;
         width: 31px;
         height: 63px;
         background-position: center;
         background-repeat: no-repeat;
-        top: 209px;
         &::before{
           position: absolute;
           content: '';
@@ -34,6 +33,31 @@
           top: 22px;
           left: 9px;
         }
+      }
+      &-prev{
+        background-image: url(../img/decorate/prev_control.png);
+        left: 0;
+        &::before{
+          //background-image: url('../img/decorate/prev_arrow.png');
+        }
+      }
+      &-next{
+        background-image: url(../img/decorate/next_control.png);
+        right: -812px;
+        &::before{
+          //background-image: url('../img/decorate/next_arrow.png');
+        }
+      }     
+    }
+  }
+}
+@media (min-width: $desctop-width) {
+  .bestsellers-slider{
+    &__controls{
+      top: 50%;
+      &-prev,
+      &-next{
+        top: 209px;
       }
       &-prev{
         background-image: url(../img/decorate/prev_control.png);
