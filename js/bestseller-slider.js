@@ -2,8 +2,8 @@
 //slider for bestsellers
 (function(){
   var left = 0;
-  document.querySelector('.bestsellers-slider__controls-prev').onclick = motionToLeft;
-  document.querySelector('.bestsellers-slider__controls-next').onclick = motionToRight;
+  document.querySelector('.bestsellers-slider__controls-prev').onclick = motionToRight;
+  document.querySelector('.bestsellers-slider__controls-next').onclick = motionToLeft;
   var bestsellerContainer = document.querySelector('.bestsellers-slider__wrapper');
   var bestsellersCount = document.getElementsByClassName('bestseller').length + 1;
   function getContainerLength(){
@@ -11,24 +11,27 @@
   }
   var container = document.querySelector('.container');
   var containerWidth = getComputedStyle(container).width;
-  console.log(containerWidth.indexOf('px'));
+  //console.log(containerWidth.indexOf('px'));
   var numberLength = containerWidth.indexOf('px');
-  console.log("numberLength " + numberLength);
+  //console.log("numberLength " + numberLength);
   var containerWidthNumber = parseInt(containerWidth.substring(0, numberLength),10);
-  console.log("containerWidthNumber " + containerWidthNumber);
+ //console.log("containerWidthNumber " + containerWidthNumber);
 
 
   function motionToLeft(){
     console.log("motionToLeft");
-    if(left > containerWidthNumber - 270*(bestsellersCount-2)){
-      left += -270;      
+    if(left > containerWidthNumber - 270*(bestsellersCount-1)){
+      left += -270;
+      console.log("left is " + left);      
       bestsellerContainer.style.left = left + 'px';
     }
   }
   function motionToRight(){
     console.log("motionToRight");
-    if(left < containerWidthNumber - 270*(bestsellersCount-2)){
+    if (left < 0)
+    {
       left += 270;
+      console.log("left is " + left); 
       bestsellerContainer.style.left = left + 'px';
     }
   }

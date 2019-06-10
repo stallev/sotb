@@ -1,6 +1,7 @@
 .goods{
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 @media (min-width: $tablet-width) {
   .goods{

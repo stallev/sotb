@@ -5,7 +5,8 @@
 }
 @media (min-width: $tablet-width) {
   .container{
-    width: 820px;
+    width: 849px;
+    overflow-x: hidden;
     &--footer{
       display: flex;
       flex-direction: row;
@@ -15,6 +16,6 @@
 }
 @media (min-width: $desctop-width) {
   .container{
-    width: 1346px;
+    width: 1350px;
   }
 }
